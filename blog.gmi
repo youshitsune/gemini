@@ -8,7 +8,7 @@
 ```
 # GEM-BLOG
 
-=>posts/dark-matter-possible-new-energy-source.gmi Dark Matter As A Possible New Energy Source
-=>posts/attention-is-all-you-need.gmi Attention is all you need
-=>posts/could-we-really-be-made-of-swiss-cheese.gmi Could We Really Be Made of Swiss Cheese?
 =>posts/ive-set-up-my-gemini-capsule.gmi I've Set Up My Gemini Capsule
+=>posts/could-we-really-be-made-of-swiss-cheese.gmi Could We Really Be Made of Swiss Cheese?
+=>posts/attention-is-all-you-need.gmi Attention is all you need
+=>posts/dark-matter-possible-new-energy-source.gmi Dark Matter As A Possible New Energy Source
