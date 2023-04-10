@@ -1,0 +1,5 @@
+# I've Set Up My Gemini Capsule
+
+I’ve finally set up my gemini capsule. You can access it.
+
+=>gemini://koyu.space/youshitsune
