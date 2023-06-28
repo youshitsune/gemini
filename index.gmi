@@ -13,7 +13,7 @@
 
 # YOUSHITSUNE
 
-=>https://youshitsune.me My personal website
+=>https://youshitsune.tech My personal website
 =>https://github.com/youshitsune My projects
 
 -----BEGIN GEEK CODE BLOCK-----
