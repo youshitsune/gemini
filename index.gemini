@@ -1,22 +1,31 @@
-# youshitsune [dot] tech
+# youshitsune.tech
 
 ## Introduction
 Hi, my name is Luka. My internet nick is youshitsune. I'm open-source geek, who loves to contribute to decentralization of internet.
 
+## Articles
 =>blog.gmi Posts
-
-## Tech Stuff
 =>tools.gmi Tools I Use
 
+## Services
+### LibreX
+Framework and javascript free privacy respecting meta search engine
+=>https://search.youshitsune.tech URL
+=>https://github.com/hnhx/librex Source Code
 
-## Geek code
------BEGIN GEEK CODE BLOCK-----
-Version: 3.1
-GCS/CM/ED/IT/M/P/S d s+:- a--- C@>$ UL+++ P L+++ !E W? !N !o !K !w !O M-- !V PS !PE Y++ PGP+ !t !5 !X !R tv b+++ DI-- !D G++ e- h !r y?
-------END GEEK CODE BLOCK------ 
+### Private Bin
+A minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.
+=>https://bin.youshitsune.tech URL
+=>https://github.com/PrivateBin/PrivateBin Source Code
 
 ## Links
 => https://youshitsune.tech My personal website
 => https://github.com/youshitsune?tab=repositories My projects
 => mailto:youshitsune@envs.net Email
 => https://tilde.zone/@youshitsune Mastodon
+
+## Geek code
+-----BEGIN GEEK CODE BLOCK-----
+Version: 3.1
+GCS/CM/ED/IT/M/P/S d s+:- a--- C@>$ UL+++ P L+++ !E W? !N !o !K !w !O M-- !V PS !PE Y++ PGP+ !t !5 !X !R tv b+++ DI-- !D G++ e- h !r y?
+------END GEEK CODE BLOCK------ 
