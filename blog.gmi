@@ -1,12 +1,4 @@
-```
-  ____ _____ __  __       ____  _     ___   ____
- / ___| ____|  \/  |     | __ )| |   / _ \ / ___|
-| |  _|  _| | |\/| |_____|  _ \| |  | | | | |  _
-| |_| | |___| |  | |_____| |_) | |__| |_| | |_| |
- \____|_____|_|  |_|     |____/|_____\___/ \____|
-
-```
-# GEM-BLOG
+# Posts
 
 =>posts/setup-ssh-over-tor.gmi Setup SSH Over TOR
 =>posts/local-reality-and-the-chsh-inequality.gmi Local reality and the CHSH inequality
