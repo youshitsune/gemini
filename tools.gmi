@@ -1,39 +1,46 @@
 # Tools I Use
 
-For Laptop:
-- Web browser
-    - Firefox with arkenfox user.js
-    - surf
-- Email Client
-    - Neomutt
-- Office Software
-    - Onlyoffice
-- Operating system setup
-    - Arch Linux
-    - dwm
-    - st
-    - yash
-    - dunst
-    - dmenu
-    - slstatus
-- Programming Languages
-    - Python
-    - C
-    - Bash
+## For Laptop:
 
-For Servers:
-- Operating system
-    - Debian
-- Services
-    - Docker
-    - Uptime Kuma
-    - Kineto
-    - GDS (my project)
-    - nginx
-    - AdGuardHome
-    - CGit
-    - Private Bin
-    - LibreX
+### Web browser
+Firefox with arkenfox user.js
+surf
+
+### Email Client
+Neomutt
+ 
+### Office Software
+Onlyoffice
+
+### Operating system setup
+Arch Linux
+dwm
+st
+yash
+dunst
+dmenu
+slstatus
+
+### Programming Languages
+Python
+C
+Bash
+
+## For Servers:
+
+### Operating system
+Debian
+
+### Services
+Docker
+Uptime Kuma
+Kineto
+GDS (my project)
+nginx
+AdGuardHome
+CGit
+Private Bin
+LibreX
 
 I think that's it, if you find something that I missed feel free to contact me.
 
