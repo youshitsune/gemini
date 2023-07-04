@@ -31,3 +31,6 @@ div {
     border: white 1px solid;
     border-radius: 8px;
 }
+div pre{
+    margin-left: 1em;
+}
