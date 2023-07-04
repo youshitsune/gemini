@@ -12,7 +12,7 @@ h1:before{
 	content: "# ";
 }
 h1:after{
-	content: "\A- - - - -";
+	content: "\A-----";
 	white-space: pre;
 }
 h2{
