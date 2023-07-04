@@ -3,44 +3,44 @@
 ## For Laptop:
 
 ### Web browser
-Firefox with arkenfox user.js
-surf
+- Firefox with arkenfox user.js
+- surf
 
 ### Email Client
-Neomutt
+- Neomutt
  
 ### Office Software
-Onlyoffice
+- Onlyoffice
 
 ### Operating system setup
-Arch Linux
-dwm
-st
-yash
-dunst
-dmenu
-slstatus
+- Arch Linux
+- dwm
+- st
+- yash
+- dunst
+- dmenu
+- slstatus
 
 ### Programming Languages
-Python
-C
-Bash
+- Python
+- C
+- Bash
 
 ## For Servers:
 
 ### Operating system
-Debian
+- Debian
 
 ### Services
-Docker
-Uptime Kuma
-Kineto
-GDS (my project)
-nginx
-AdGuardHome
-CGit
-Private Bin
-LibreX
+- Docker
+- Uptime Kuma
+- Kineto
+- GDS (my project)
+- nginx
+- AdGuardHome
+- CGit
+- Private Bin
+- LibreX
 
 I think that's it, if you find something that I missed feel free to contact me.
 
