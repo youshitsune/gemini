@@ -1,3 +1,28 @@
-h1 {
-    color: red;
+body{
+	color: white;
+	font-family: sans-serif;
+	background-color: #2d2d2d;
+	margin-left: 5em;
+	margin-top: 3em;
+}
+h1, h2, h3{
+    color: #7dfd66;
+    font-weight: bold;
+}
+h1:before{
+	content: "# ";
+}
+h1:after{
+	content: "\A- - - - -";
+	white-space: pre;
+}
+h2:before{
+	content: "## ";
+}
+h3:before{
+	content: "### ";
+}
+a{
+	text-decoration: none;
+	color: #00f4ff;
 }
