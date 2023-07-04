@@ -6,4 +6,4 @@ Basically, you can have a engine in shape of cube, then you have a high pressure
 
 More about this is written in this paper by Jia Liu.
 
-=>https://youshitsune.me/pdf/Dark_Matter_as_a_possible_new_energy_source.pdf PDF
+=>../pdf/Dark_Matter_as_a_possible_new_energy_source.pdf PDF
