@@ -5,8 +5,8 @@ body{
     margin: 3em 5em;
 
 }
-h1, h2, h3{
-    color: #7dfd66;
+h1{
+    color: #fe3535;
     font-weight: bold;
 }
 h1:before{
@@ -16,8 +16,16 @@ h1:after{
 	content: "\A- - - - -";
 	white-space: pre;
 }
+h2{
+    color: #7dfd66;
+    font-weight: bold;
+}
 h2:before{
 	content: "## ";
+}
+h3{
+    color: #9e00ff;
+    font-weight: bold;
 }
 h3:before{
 	content: "### ";
