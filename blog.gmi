@@ -1,5 +1,7 @@
 # Posts
 
+=>../index.xml Atom Feed
+
 =>posts/setup-ssh-over-tor.gmi Setup SSH Over TOR
 =>posts/local-reality-and-the-chsh-inequality.gmi Local reality and the CHSH inequality
 =>posts/bernstein-vazirani-algorithm-implementation-in-qiskit.gmi Bernstein-Vazirani algorithm implementation in Qiskit
