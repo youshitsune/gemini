@@ -20,7 +20,8 @@ h2{
     font-weight: bold;
 }
 h2:before{
-	content: "## ";
+	content: "  \A## ";
+    white-space: normal;
 }
 h3{
     color: #9e00ff;
