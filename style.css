@@ -5,6 +5,7 @@ body{
     margin: 3em 5em;
 }
 h1{
+    padding-top: 0.5em;
     color: #fe3535;
     font-weight: bold;
 }
@@ -16,14 +17,15 @@ h1:after{
 	white-space: pre;
 }
 h2{
+    padding-top: 0.5em;
     color: #7dfd66;
     font-weight: bold;
 }
 h2:before{
-	content: "  \A## ";
-    white-space: normal;
+	content: "## ";
 }
 h3{
+    padding-top: 0.5em;
     color: #9e00ff;
     font-weight: bold;
 }
