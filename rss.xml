@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="utf-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+
+<channel>
+<title>Blog posts - YOUSHITSUNE</title>
+<description>RSS feed of my blog posts</description>
+<language>en-us</language>
+<link>https://youshitsune.tech/rss.xml</link>
+<atom:link href="https://youshitsune.tech/rss.xml" rel="self" type="application/rss+xml" />
+
+<!-- LB -->
+
+<item>
+<title></title>
+<guid>https://lukesmith.xyz/posts/started-my-journey-on-envs.net.gmi</guid>
+<link>https://lukesmith.xyz/posts/started-my-journey-on-envs.net.gmi</link>
+<pubDate>Wed, 05 Jul 2023 10:15:11 +0200</pubDate>
+<description><![CDATA[# Started My Journey on Envs.net
+I’ve started my journey on envs.net. It’s minimalistic tilde server. All of my journey updates are going to be on envs.net site.
+=> https://youshitsune.envs.net/
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://lukesmith.xyz/posts/setup-ssh-over-tor.gmi</guid>
+<link>https://lukesmith.xyz/posts/setup-ssh-over-tor.gmi</link>
+<pubDate>Wed, 05 Jul 2023 10:15:07 +0200</pubDate>
+<description><![CDATA[# Setup SSH Over TOR
+This is tutorial for Debian systems.
+## Setting up Tor - Server
+First install tor.
+```bash
+sudo apt install tor
+```
+Then edit torrc file.
+```bash
+sudo vim /etc/tor/torrc
+```
+Add this to it
+```
+HiddenServiceDir /var/lib/tor/hidden-service-example/
+HiddenServicePort 22 127.0.0.1:22
+HiddenServiceAuthorizeClient stealth hidden-service-example
+```
+Restart tor
+```bash
+sudo systemctl restart tor
+```
+That's it for the server
+## Setting up Tor - Client
+First install tor.
+```bash
+sudo apt install tor
+sudo systemctl start tor
+```
+Then ssh into your machine
+```bash
+torify user@hostname_of_your_service
+```
+To get hostname run this.
+```bash
+sudo cat /var/lib/tor/hidden-service-example/hostname
+```
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://lukesmith.xyz/posts/my-new-look-on-how-to-be-productive.gmi</guid>
+<link>https://lukesmith.xyz/posts/my-new-look-on-how-to-be-productive.gmi</link>
+<pubDate>Wed, 05 Jul 2023 10:15:02 +0200</pubDate>
+<description><![CDATA[# My New Look on How to Be Productive
+I've researched on some ways to be productive(i.e. wasting my damn time). And I completely overlooked the calendar.
+Now you should manage your time in blocks. That means for every task you block a time in calendar. One that works for me is Google Calendar, yes I know Google! But I can't found reliable alternative if you've some alternative 
+=> mailto:youshitsune@envs.net mail me.
+With this method I know at what time I supposed to do something. It's that easy, don't ever listen to some productivity guru, who tells you he manages his whole life in Notion or some fancy apps like that. Being productive is easy, you just need to have a strong will to do things that you actually don't want to do.
+So, just use calendar it made me very productive.
+ 
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://lukesmith.xyz/posts/local-reality-and-the-chsh-inequality.gmi</guid>
+<link>https://lukesmith.xyz/posts/local-reality-and-the-chsh-inequality.gmi</link>
+<pubDate>Wed, 05 Jul 2023 10:14:56 +0200</pubDate>
+<description><![CDATA[# Local reality and the CHSH inequality
+The CHSH game is a thought experiment involving two parties separated at a great distance (far enough to preclude classical communication at the speed of light), each of whom has access to one half of an entangled two-qubit pair. Analysis of this game shows that no classical local hidden-variable theory can explain the correlations that can result from entanglement. Since this game is indeed physically realizable, this gives strong evidence that classical physics is fundamentally incapable of explaining certain quantum phenomena, at least in a "local" fashion. 
+Here is implementation for CHSH Inequality
+```python
+import qiskit
+from qiskit import QuantumCircuit, ClassicalRegister, QuantumRegister,transpile, Aer
+from qiskit.tools.visualization import circuit_drawer
+from qiskit.tools.monitor import job_monitor, backend_monitor, backend_overview
+from qiskit.providers.aer import noise
+from qiskit_ibm_provider import IBMProvider
+import matplotlib.pyplot as plt
+import numpy as np
+import time
+```
+```python
+sim = Aer.get_backend('aer_simulator')
+provider = IBMProvider('imbq-key')
+backend = provider.get_backend('ibmq_lima')
+```
+```python
+def make_chsh_circuit(theta_vec):
+    chsh_circuits = []
+    for theta in theta_vec:
+        obs_vec = ['00', '01', '10', '11']
+        for el in obs_vec:
+            qc = QuantumCircuit(2,2)
+            qc.h(0)
+            qc.cx(0,1)
+            qc.ry(theta, 0)
+            for a in range(2):
+                if el[a] == '1':
+                    qc.h(a)
+            qc.measure(range(2),range(2))
+            chsh_circuits.append(qc)
+    return chsh_circuits
+```
+```python
+def compute_chsh_witness(counts):
+    CHSH1 = []
+    CHSH2 = []
+    for i in range(0, len(counts), 4):
+        theta_dict = counts[i:i + 4]
+        zz = theta_dict[0]
+        zx = theta_dict[1]
+        xz = theta_dict[2]
+        xx = theta_dict[3]
+        no_shots = sum(xx[y] for y in xx)
+        chsh1 = 0
+        chsh2 = 0
+        for element in zz:
+            parity = (-1)**(int(element[0])+int(element[1]))
+            chsh1+=parity*zz[element]
+            chsh2+=parity*zz[element]
+    
+        for element in zx:
+            parity = (-1)**(int(element[0])+int(element[1]))
+            chsh1+= parity*zx[element]
+            chsh2-= parity*zx[element]
+    
+        for element in xz:
+            parity = (-1)**(int(element[0])+int(element[1]))
+            chsh1-= parity*xz[element]
+            chsh2+= parity*xz[element]
+    
+        for element in xx:
+            parity = (-1)**(int(element[0])+int(element[1]))
+            chsh1+= parity*xx[element]
+            chsh2+= parity*xx[element]
+    
+        CHSH1.append(chsh1/no_shots)
+        CHSH2.append(chsh2/no_shots)
+    return CHSH1, CHSH2
+```
+```python
+number_of_thetas = 15
+theta_vec = np.linspace(0,2*np.pi,number_of_thetas)
+my_chsh_circuits = make_chsh_circuit(theta_vec)
+```
+```python
+my_chsh_circuits[4].draw(output="mpl")
+```
+```python
+result_ideal = sim.run(my_chsh_circuits).result()
+tic = time.time()
+transpiled_circuits = transpile(my_chsh_circuits, backend)
+job_real = backend.run(transpiled_circuits, shots=8192)
+job_monitor(job_real)
+result_real = job_real.result()
+toc = time.time()
+print(toc-tic)
+```
+```python
+CHSH1_ideal, CHSH2_ideal = compute_chsh_witness(result_ideal.get_counts())
+CHSH1_real, CHSH2_real = compute_chsh_witness(result_real.get_counts())
+```
+```python
+plt.figure(figsize=(12,8))
+plt.plot(theta_vec, CHSH1_ideal,'o-',label = 'CHSH1 Noiseless')
+plt.plot(theta_vec, CHSH2_ideal, 'o-', label='CHSH2 Noiseless')
+plt.plot(theta_vec, CHSH1_real, 'x-', label='CHSH1 Quito')
+plt.plot(theta_vec, CHSH2_real, 'x-', label='CHSH2 Quito')
+plt.legend()
+```
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://lukesmith.xyz/posts/ive-set-up-my-gemini-capsule.gmi</guid>
+<link>https://lukesmith.xyz/posts/ive-set-up-my-gemini-capsule.gmi</link>
+<pubDate>Wed, 05 Jul 2023 10:14:51 +0200</pubDate>
+<description><![CDATA[# I've Set Up My Gemini Capsule
+I’ve finally set up my gemini capsule. You can access it.
+=>gemini://koyu.space/youshitsune
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://lukesmith.xyz/posts/dark-matter-possible-new-energy-source.gmi</guid>
+<link>https://lukesmith.xyz/posts/dark-matter-possible-new-energy-source.gmi</link>
+<pubDate>Wed, 05 Jul 2023 10:14:47 +0200</pubDate>
+<description><![CDATA[# Dark Matter As A Possible New Energy Source
+Basically, there is idea for engine: Dark Matter engine uses Dark Matter particles annihilation remnants as propulsion.
+Basically, you can have a engine in shape of cube, then you have a high pressure on it. Then just remove one side of cube, place where remnants can exit. Which in result propels the cube.
+More about this is written in this paper by Jia Liu.
+=>../pdf/Dark_Matter_as_a_possible_new_energy_source.pdf PDF
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://lukesmith.xyz/posts/could-we-really-be-made-of-swiss-cheese.gmi</guid>
+<link>https://lukesmith.xyz/posts/could-we-really-be-made-of-swiss-cheese.gmi</link>
+<pubDate>Wed, 05 Jul 2023 10:14:42 +0200</pubDate>
+<description><![CDATA[# Could We Really Be Made of Swiss Cheese?
+“Could we really be made of Swiss cheese?” is paper that explains xenobiology. It’s really great introduction to xenobiology. I recommend to read it.
+=>../pdf/Could_we_really_be_made_of_swiss_cheese.pdf PDF
+Xenobiology studies life with alternate way to get energy.
+    Information => DNA -> Protein
+    Form => Life as series of innate patterns
+    Metabolism <-> Information => Life as process of chemical transformation of substances
+    Information <-> Form => Life as flow of information
+    Energy<-> Form => Life as energy flow
+    Metabolism <-> Energy => Life as thermodynamic and kinetic process
+Xenobiology can provide potential medical and biosafety applications, as well as challenge the foundations of biological engineering. This paper reviews the philosophical aspect of xenobiology, focusing on the possible multiple realizability of life.
+Synthetic philosophical theories aim to design systems with natural functions, rather than biological functions, to test chemistry and understand life.
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://lukesmith.xyz/posts/bernstein-vazirani-algorithm-implementation-in-qiskit.gmi</guid>
+<link>https://lukesmith.xyz/posts/bernstein-vazirani-algorithm-implementation-in-qiskit.gmi</link>
+<pubDate>Wed, 05 Jul 2023 10:14:38 +0200</pubDate>
+<description><![CDATA[# Bernstein-Vazirani Algorithm Implementation in Qiskit
+It is a restricted version of the Deutsch-Jozsa algorithm where instead of distinguishing between two different classes of functions, it tries to learn a string encoded in a function.
+Here is implementation for Bernstein-Vaziarini algorithm:
+```python
+from qiskit import *
+%matplotlib inline
+from qiskit.tools.visualization import plot_histogram
+```
+```python
+num = '101001'
+circuit = QuantumCircuit(len(num)+1, len(num))
+circuit.h(range(len(num)))
+circuit.x(len(num))
+circuit.h(len(num))
+circuit.barrier()
+```
+    <qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e80>
+```python
+for i, val in enumerate(reversed(num)):
+    if val == "1":
+        circuit.cx(i,6)
+```
+```python
+circuit.barrier()
+circuit.h(range(len(num)))
+```
+    <qiskit.circuit.instructionset.InstructionSet at 0x6370a60b4e20>
+```python
+circuit.measure(range(len(num)), range(len(num)))
+```
+    <qiskit.circuit.instructionset.InstructionSet at 0x6370e006d5a0>
+```python
+sim = Aer.get_backend('qasm_simulator')
+result = execute(circuit, sim, shots = 1).result()
+counts = result.get_counts()
+print(counts)
+```
+    {'101001': 1}
+]]></description>
+</item>
+
+
+<item>
+<title></title>
+<guid>https://lukesmith.xyz/posts/attention-is-all-you-need.gmi</guid>
+<link>https://lukesmith.xyz/posts/attention-is-all-you-need.gmi</link>
+<pubDate>Wed, 05 Jul 2023 10:14:11 +0200</pubDate>
+<description><![CDATA[# Attention is all you need
+“Attention is all you need” is a research paper that proposes a new way of making an AI.
+Attention is mapping a query and a set of key-value pairs to an output, all of which are vectors: the query, the keys, and the values. The results are calculated as a weighted sum of the values, ith each value’s weight determined by the query’s compatibility function with its corresponding key.
+There are to type of attentions:
+    Self-attention
+    Cross-attention
+A word about cross-attention is gonna be some other time.
+Self-attention is mechanism that links various positions in a single sequence to create a representation of the sequence. Reading comprehension, abstractive summarization, textual entailment, and the acquisition of task-independent phrase representation are just a few of the activities in which self-attention has been successfully applied.
+More about this you can read in “Attention is all you need”.
+=>../pdf/Attention_is_all_you_need.pdf PDF
+]]></description>
+</item>
+
+
+</channel>
+</rss>
+
