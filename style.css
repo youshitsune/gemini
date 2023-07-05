@@ -44,3 +44,6 @@ div {
 div pre{
     margin-left: 1em;
 }
+p{
+    margin: 0;
+}
