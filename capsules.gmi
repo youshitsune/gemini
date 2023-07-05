@@ -1,0 +1,4 @@
+# Capsules
+There are many interesting gemini capsules here are few:
+=>gemini://cosmic.voyage Cosmic Voyage
+=>gemini://paulwilde.uk Paul Wilde (creator of)
