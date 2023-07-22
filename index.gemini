@@ -1,39 +1,30 @@
 # youshitsune.tech
 
-## Introduction
-Hi, my name is Luka. My internet nick is youshitsune. I'm open-source geek, who loves to contribute to decentralization of internet.
+## Hi, I'm Luka Jovanovic
+
+### About me
+I'm programmer, Linux and Open-Source software geek.
+
+### Skills
+Languages:
+* Python
+* C
+* C#
+
+Extras:
+* Linux
+* Github
+* Git
+* Terminal
 
 ## Articles
 =>blog.gmi Posts
 =>tools.gmi Tools I Use
 =>capsules.gmi Personally interesting capsules
 
-## Services
-### LibreX
-Framework and javascript free privacy respecting meta search engine
-=>https://search.youshitsune.tech URL
-=>https://github.com/hnhx/librex Source Code
-
-### Private Bin
-A minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.
-=>https://bin.youshitsune.tech URL
-=>https://github.com/PrivateBin/PrivateBin Source Code
-
-## Tildeverse
-### envs.net
-=>gemini://envs.net/~youshitsune My envs capsule
-
-I'm also on IRC and Matrix server sometimes, username is youshitsune.
-
-### tilde.tel
-You can call me if you want or message me my number is on tilde.tel.
-
-### tilde.zone
-I'm also on Mastodon, feel free to message me about anything.
-
-## Buy me a book
-If you can, buy me a book
-=> https://buymeacoffee.com/youshitsune Buy me a book
+## Pages
+=>services.gmi Services
+=>tildeverse.gmi Tildeverse
 
 ## Links
 => https://youshitsune.tech My personal website
@@ -41,6 +32,7 @@ If you can, buy me a book
 => https://git.youshitsune.tech My projects (CGit)
 => mailto:youshitsune@envs.net Email
 => https://tilde.zone/@youshitsune Mastodon
+=> https://buymeacoffee.com/youshitsune Buy me a book
 
 ## Geek code
 -----BEGIN GEEK CODE BLOCK-----
