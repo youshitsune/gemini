@@ -1,0 +1,10 @@
+# Services
+## LibreX
+Framework and javascript free privacy respecting meta search engine
+=>https://search.youshitsune.tech URL
+=>https://github.com/hnhx/librex Source Code
+
+## Private Bin
+A minimalist, open source online pastebin where the server has zero knowledge of pasted data. Data is encrypted/decrypted in the browser using 256 bits AES.
+=>https://bin.youshitsune.tech URL
+=>https://github.com/PrivateBin/PrivateBin Source Code
