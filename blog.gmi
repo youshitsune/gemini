@@ -3,6 +3,7 @@
 =>https://youshitsune.tech/index.xml Feed
 
 ----
+=>posts/look-what-i-found-on-tor.gmi Look What I Found on Tor
 =>posts/flashing-custom-rom.gmi Flashing Lineage OS 20 on my Samsung Galaxy A50
 =>posts/setup-ssh-over-tor.gmi Setup SSH Over TOR
 =>posts/local-reality-and-the-chsh-inequality.gmi Local reality and the CHSH inequality
