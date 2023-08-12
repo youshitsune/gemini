@@ -6,6 +6,9 @@
 * Firefox with arkenfox user.js
 * surf
 
+### Text editor
+* Vim (of course)
+
 ### Email Client
 * Neomutt
  
@@ -34,10 +37,7 @@
 ### Services
 * Docker
 * Uptime Kuma
-* Kineto
-* GDS (my project)
 * nginx
-* AdGuardHome
 * CGit
 * Private Bin
 * LibreX
