@@ -40,7 +40,7 @@
 * nginx
 * CGit
 * Private Bin
-* LibreX
+* SearXNG 
 
 I think that's it, if you find something that I missed feel free to contact me.
 
