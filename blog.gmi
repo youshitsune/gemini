@@ -1,6 +1,6 @@
 # Posts
 
-=>https://youshitsune.tech/index.xml Feed
+=>https://youshitsune.tech/atom.xml Feed
 
 ----
 =>posts/look-what-i-found-on-tor.gmi Look What I Found on Tor

@@ -9,6 +9,3 @@ A minimalist, open source online pastebin where the server has zero knowledge of
 =>https://bin.youshitsune.tech URL
 =>https://github.com/PrivateBin/PrivateBin Source Code
 
-## Snowflake
-Snowflake is a system that allows people from all over the world to access censored websites and applications.
-=>https://youshitsune.tech/snowflake.html URL
