@@ -3,6 +3,8 @@ body{
     font-family: 'Consolas', monaco, monospace;
     background-color: #2d2d2d;
     margin: 3em 5em;
+    margin-left: 20%;
+    margin-right: 20%;
 }
 h1{
     padding-top: 0.5em;
