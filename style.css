@@ -38,15 +38,12 @@ h3:before{
     content: "### ";
 }
 a {
-    color:white;
-    text-decoration:underline;
-    text-decoration-color: #826200;
-    text-decoration-skip-ink:none;
-    text-decoration-thickness:0.3rem;
-    text-underline-offset:-0.25rem;
-    transition:text-decoration 0.3s;
+    color:#1194e0;
+    text-decoration:none;
 }
-a:hover{text-decoration-color:#826200;text-decoration-skip-ink:none;text-decoration-thickness:0.5rem;}
+a:hover{
+    color: #112de0;
+}
 div {
     background-color: #0f0f0f;
     border: white 1px solid;
