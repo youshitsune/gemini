@@ -1,0 +1,3 @@
+# Tag: ai
+
+=>../posts/attention-is-all-you-need.gmi Attention is all you need
