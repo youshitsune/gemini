@@ -1,7 +1,0 @@
-# Capsules
-
-There are many interesting gemini capsules here are few I personally find interesting:
-=>gemini://cosmic.voyage Cosmic Voyage
-=>gemini://paulwilde.uk Paul Wilde (creator of Nemini server)
-=>gemini://ttrpgs.com random tabletop RPG resources
-=>gemini://splint.rs Splint
