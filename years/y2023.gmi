@@ -1,25 +1,25 @@
 # 2023
 
 ### Jul 2023
-=>posts/look-what-i-found-on-tor.gmi Look What I Found on Tor
-=>posts/flashing-custom-rom.gmi Flashing Lineage OS 20 on my Samsung Galaxy A50
-=>posts/setup-ssh-over-tor.gmi Setup SSH Over TOR
+=>../posts/look-what-i-found-on-tor.gmi Look What I Found on Tor
+=>../posts/flashing-custom-rom.gmi Flashing Lineage OS 20 on my Samsung Galaxy A50
+=>../posts/setup-ssh-over-tor.gmi Setup SSH Over TOR
 
 ### Jun 2023
-=>posts/local-reality-and-the-chsh-inequality.gmi Local reality and the CHSH inequality
-=>posts/bernstein-vazirani-algorithm-implementation-in-qiskit.gmi Bernstein-Vazirani algorithm implementation in Qiskit
+=>../posts/local-reality-and-the-chsh-inequality.gmi Local reality and the CHSH inequality
+=>../posts/bernstein-vazirani-algorithm-implementation-in-qiskit.gmi Bernstein-Vazirani algorithm implementation in Qiskit
 
 ### May 2023
-=>posts/my-new-look-on-how-to-be-productive.gmi My New Look on How to Be Productive
+=>../posts/my-new-look-on-how-to-be-productive.gmi My New Look on How to Be Productive
 
 ### Apr 2023
-=>posts/started-my-journey-on-envs.net.gmi Started My Journey on Envs.net
-=>posts/ive-set-up-my-gemini-capsule.gmi I've Set Up My Gemini Capsule
+=>../posts/started-my-journey-on-envs.net.gmi Started My Journey on Envs.net
+=>../posts/ive-set-up-my-gemini-capsule.gmi I've Set Up My Gemini Capsule
 
 ### Mar 2023
-=>posts/could-we-really-be-made-of-swiss-cheese.gmi Could We Really Be Made of Swiss Cheese?
+=>../posts/could-we-really-be-made-of-swiss-cheese.gmi Could We Really Be Made of Swiss Cheese?
 
 ### Feb 2023
-=>posts/attention-is-all-you-need.gmi Attention is all you need
-=>posts/dark-matter-possible-new-energy-source.gmi Dark Matter As A Possible New Energy Source
+=>../posts/attention-is-all-you-need.gmi Attention is all you need
+=>../posts/dark-matter-possible-new-energy-source.gmi Dark Matter As A Possible New Energy Source
 
