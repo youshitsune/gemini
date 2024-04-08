@@ -11,4 +11,4 @@ Here is link of their website (TOR):
 =>http://z4taxzlbse4plf5nckehqvphodwm3jro7qwaqlspz7ez7wylkmrvrtid.onion Link
 
 And image of their homepage:
-=>https://youshitsune.tech/images/group.png Link
+=>../images/group.png Link
