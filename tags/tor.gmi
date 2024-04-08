@@ -1,3 +1,4 @@
 # Tag: tor
 
 =>../posts/look-what-i-found-on-tor.gmi Look What I Found on Tor
+=>../posts/setup-ssh-over-tor.gmi Setup SSH over Tor
