@@ -1,4 +1,8 @@
+=> index.gemini HOME
+=> blog.gmi Posts
+
 # Tildeverse
+
 ## envs.net
 =>gemini://envs.net/~youshitsune My envs capsule
 

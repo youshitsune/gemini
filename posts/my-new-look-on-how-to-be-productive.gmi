@@ -1,5 +1,7 @@
+=> ../index.gemini HOME
+=> ../blog.gmi Posts
+
 Date: 17/05/2023
-Tags:
 
 # My New Look on How to Be Productive
 

@@ -1,5 +1,7 @@
+=> ../index.gemini HOME
+=> ../blog.gmi Posts
+
 Date: 26/06/2023
-Tags: qiskit, quantum
 
 # Local reality and the CHSH inequality
 

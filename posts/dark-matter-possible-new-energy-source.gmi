@@ -1,5 +1,7 @@
+=> ../index.gemini HOME
+=> ../blog.gmi Posts
+
 Date: 18/02/2023
-Tags: physics
 
 # Dark Matter As A Possible New Energy Source
 

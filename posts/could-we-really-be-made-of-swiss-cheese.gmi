@@ -1,5 +1,7 @@
+=> ../index.gemini HOME
+=> ../blog.gmi Posts
+
 Date: 13/03/2023
-Tags: xenobiology
 
 # Could We Really Be Made of Swiss Cheese?
 

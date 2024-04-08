@@ -1,5 +1,7 @@
+=> ../index.gemini HOME
+=> ../blog.gmi Posts
+
 Date: 19/02/2023
-Tags: ai
 
 # Attention is all you need
 

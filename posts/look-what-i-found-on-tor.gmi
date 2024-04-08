@@ -1,5 +1,7 @@
+=> ../index.gemini HOME
+=> ../blog.gmi Posts
+
 Date: 21/07/2023
-Tags: tor
 
 # Look What I Found on Tor
 

@@ -1,4 +1,0 @@
-# Tag: qiskit
-
-=>../posts/local-reality-and-the-chsh-inequality.gmi Local reality and the CHSH inequality
-=>../posts/bernstein-vazirani-algorithm-implementation-in-qiskit.gmi Bernstein-Vazirani algorithm implementation in Qiskit

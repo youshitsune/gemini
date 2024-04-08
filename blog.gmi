@@ -1,3 +1,6 @@
+=> index.gemini HOME
+=> blog.gmi Posts
+
 # Posts
 
 ## Latest post
@@ -27,14 +30,3 @@
 ### Feb 2023
 =>../posts/attention-is-all-you-need.gmi Attention is all you need
 =>../posts/dark-matter-possible-new-energy-source.gmi Dark Matter As A Possible New Energy Source
-
-## Tags
-=> tags/ai.gmi ai
-=> tags/qiskit.gmi qiskit
-=> tags/quantum.gmi quantum
-=> tags/physics.gmi physics
-=> tags/tor.gmi tor
-=> tags/xenobiology.gmi xenobiology
-
-## Date
-=> years/y2023.gmi 2023

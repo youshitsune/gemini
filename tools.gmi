@@ -1,3 +1,6 @@
+=> index.gemini HOME
+=> blog.gmi Posts
+
 # Tools I Use
 
 ## For Laptop:

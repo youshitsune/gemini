@@ -1,3 +1,6 @@
+=> index.gemini HOME
+=> blog.gmi Blog
+
 # Services
 ## LibreX
 Framework and javascript free privacy respecting meta search engine

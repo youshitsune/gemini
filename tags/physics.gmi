@@ -1,5 +1,0 @@
-# Tag: physics
-
-=> ../posts/local-relity-and-the-chsh-inequality.gmi Local Reality and the CHSH inequality
-=> ../posts/bernstein-vazirani-algorithm-implementation-in-qiskit.gmi Bernstain-Vazirani algorithm implementation in Qiskit
-=> ../posts/dark-matter-possible-new-energy-source.gmi Dark Matter As A Possible New Energy Source
