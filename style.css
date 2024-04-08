@@ -51,6 +51,7 @@ div {
 }
 div pre{
     margin-left: 1em;
+    white-space: pre-wrap;
 }
 p{
     margin: 0;
