@@ -41,6 +41,7 @@ p{
     margin: 0;
     margin-bottom: 0.1em;
 }
-body details::before{
-    content: "\A";
+details:before{
+    content: " ";
+    display: inline-block;
 }
