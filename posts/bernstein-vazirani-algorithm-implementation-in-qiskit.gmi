@@ -1,6 +1,3 @@
-=> ../index.gemini HOME
-=> ../blog.gmi Posts
-
 Date: 20/06/2023
 
 # Bernstein-Vazirani Algorithm Implementation in Qiskit

@@ -1,6 +1,3 @@
-=> ../index.gemini HOME
-=> ../blog.gmi Posts
-
 Date: 13/04/2023
 
 # Started My Journey on Envs.net

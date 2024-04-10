@@ -1,6 +1,3 @@
-=> ../index.gemini HOME
-=> ../blog.gmi Posts
-
 Date: 21/07/2023
 
 # Look What I Found on Tor
