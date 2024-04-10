@@ -1,45 +1,29 @@
 body{
     color: white;
     font-family: 'Consolas', monaco, monospace;
-    background-color: #2d2d2d;
+    background-color: #121212;
     margin: 3em 5em;
     margin-left: 20%;
     margin-right: 20%;
 }
 h1{
     padding-top: 0.5em;
-    color: #fe3535;
     font-weight: bold;
-}
-h1:before{
-    content: "# ";
+    text-align: center;
 }
 h2{
     padding-top: 0.5em;
-    color: #7dfd66;
     font-weight: bold;
     margin-bottom: 0;
-}
-h2:before{
-    content: "## ";
-}
-h2:after{
-    content: "";
-    display: block;
-    border: 1px solid #270227;
 }
 h3{
     padding-top: 0;
-    color: #9e00ff;
     font-weight: bold;
     margin-bottom: 0;
 }
-h3:before{
-    content: "### ";
-}
 a {
     color:#1194e0;
-    text-decoration:none;
+    text-decoration:underline;
 }
 a:hover{
     color: #112de0;
@@ -56,9 +40,5 @@ div pre{
 p{
     margin: 0;
     margin-bottom: 0.1em;
-}
-
-body details{
-    display: none;
 }
 
