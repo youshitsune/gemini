@@ -9,6 +9,7 @@
 Hi, I'm programmer and self-taught mechatronics engineer, who likes open-source idea!
 
 ## Projects
+=> https://github.com/youshitsune/dataviz DataViz - Simple C++ program to visualize data from csv files
 => https://github.com/youshitsune/kmeans Kmeans - Implementation of K mean algorithm in Rust
 => https://github.com/arduino-hand-recognition Arduino Hand Recognition - Recognizing gestures of hand and then accordingly turns LED on or off.
 
